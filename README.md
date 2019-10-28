@@ -17,7 +17,7 @@ Plain text files are required as input for Pedigraph. A minimum of four columns 
 3. Parent 2 ID (0 is unknown parent)
 4. Gender code (default is M/F)
 
-Other columns may be added and will not affect Pedigraph. More on how Pedigraph works can be found in the manual [here](https://animalgene.umn.edu/sites/animalgene.umn.edu/files/pedigraph_manual.pdf). Changes can be made to the file pedigraph.dat to customize Pedigraph's output. The script will only affect the parameter "outputfile."
+Other columns may be added and will not affect Pedigraph. More on how Pedigraph works can be found in the manual [here](https://animalgene.umn.edu/sites/animalgene.umn.edu/files/pedigraph_manual.pdf). Changes can be made to the file pedigraph.dat to customize Pedigraph's output. The script will only affect the parameter **outputfile**. Before running the script be sure to remove the # in front of **outputfile**.
 
 When naming output files, the script looks for text files numbered in a sequential order, starting at and ending at two specified numbers. When organizing our Excel sheet, we separated individuals and their relatives into unrelated families, represented by a number and referred to as Family ID. Organizing the pedigrees in a numbered fashion proves to be very simple and is recommended. The script also looks for a certain amount of individuals present in the pedigree and chooses whether or not to generate output depending on if the condition is met. 
 
