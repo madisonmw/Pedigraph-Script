@@ -5,6 +5,8 @@ This script uses the free-to-use pedigree generating software Pedigraph to autom
 
 The script was written for a small project at Auburn University in Dr. Laurie Stevison's lab. In an Excel sheet we received hundreds of IDs of multiple macaques. The job was to find out who is related to who and separate individuals into families; luckily pedigree building software exists, so creating pedigrees slowly by hand was not required. The tedium of renaming the output file of multiple families is removed by this script, as well.
 
+The script can be found in the folder **Example Files**. It is set up to run for the examples, but it can be modified to fit different needs. 
+
 ### How Pedigraph Works
 
 Pedigraph must be run in the command line with the command **pedigraph [input file]**. The script will run this itself and is not required unless you want to run Pedigraph on a single file.
@@ -29,3 +31,9 @@ Another important point is that unless the parents are specified as individuals 
 ### Examples
 
 I have uploaded a few example files to show how the script functions, either correctly or incorrectly. Pedigraph and **sed** are required to run the script and must be in the same directory as the input files.
+
+For each text file, the example script should do something different:
+* For 1.txt, the file should have output.
+* For 2.txt, no output should be generated as not enough individuals are present.
+* For 3.txt, no output should be generated due to error explained earlier.
+* For 4.txt, output will be generated and shows how even though the error should apply, it does not when half-siblings are present.
